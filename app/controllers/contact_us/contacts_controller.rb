@@ -1,5 +1,6 @@
 class ContactUs::ContactsController < ApplicationController
-  layout :right_nav
+  layout "right_nav"
+
   def create
     @contact = ContactUs::Contact.new(params[:contact_us_contact])
 
